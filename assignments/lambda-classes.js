@@ -39,5 +39,36 @@ class Humanoid extends GameObj {
     }
 }
 
+const mage = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+        length: 2, 
+        width: 1, 
+        height: 1, 
+        },
+    healthPoints: 5, 
+    name: 'Bruce',
+    team: 'Mage Guild',
+    weapons: 'Staff of Shamalama',
+    language: 'Common Tongue'
+});
+
+const swordsman = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+        length: 2, 
+        width: 2,
+        height: 2, 
+    },
+    healthPoints: 15, 
+    name: 'Sir Mustachio',
+    team: 'The Round Table',
+    weapons: [
+        'Giant Sword',
+        'Shield'
+    ],
+language: 'Common Tongue'
+})
+
 console.log(Humanoid);
 console.log(greet());
