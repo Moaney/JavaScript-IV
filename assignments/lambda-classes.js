@@ -68,7 +68,24 @@ const swordsman = new Humanoid({
         'Shield'
     ],
 language: 'Common Tongue'
-})
+});
+
+const archer = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+        length: 1, 
+        width: 2,
+        height: 4, 
+    },
+    healthPoints: 10, 
+    name: 'Lilith', 
+    team: 'Forest Kingdom', 
+    weapons: [
+        'Bow',
+        'Dagger',
+    ],
+    language: 'Elvish',
+});
 
 console.log(Humanoid);
 console.log(greet());
