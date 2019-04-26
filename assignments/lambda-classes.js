@@ -122,4 +122,20 @@ class ProjectManagers extends Instructor {
     }
 }
 
-const
+const aria = new Projectmanagers({
+    name: 'Bran',
+    age: 32, 
+    location: 'Winterfell',
+    gender: 'Male',
+    gradClassName: 'CS23',
+    favInstructor: 'Nettie'
+});
+
+const sanza = new ProjectManagers({
+    name: 'Sanza',
+    age: 29, 
+    location: 'Winterfell',
+    gender: 'Female',
+    gradClassName: 'WebPT9',
+    favInstructor: 'Jett'
+});
