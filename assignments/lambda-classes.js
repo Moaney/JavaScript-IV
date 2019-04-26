@@ -70,6 +70,42 @@ class Student extends Person {
     }
 }
 
+const nala = new Student({
+    name: 'Nala',
+    age: 20, 
+    location: 'Brooklyn',
+    gender: 'Female',
+    previousBackground: 'Sales',
+    className: 'webpt45',
+    favSubjects: [
+        'HTML', 'JavaScript', 'CSS'
+    ],
+});
+
+const kelli = new Student({
+    name: 'Kelli',
+    age: 26, 
+    location: 'Chicago',
+    gender: 'Female',
+    previousBackground: 'Law',
+    className: 'webpt45',
+    favSubjects: [
+        'HTML', 'JavaScript', 'Python'
+    ],
+});
+
+const bran = new Student({
+    name: 'Bran',
+    age: 32, 
+    location: 'Winterfell',
+    gender: 'Male',
+    previousBackground: 'Raven',
+    className: 'webpt45',
+    favSubjects: [
+        'SQL', 'JavaScript', 'CSS'
+    ],
+});
+
 class ProjectManagers extends Instructor {
     constructor(attrs) {
         super(attrs);
