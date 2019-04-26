@@ -29,6 +29,26 @@ class Instructor extends Person {
     }
 }
 
+const jett = new Instructor({
+    name: 'Jett',
+    age: 30, 
+    location: 'Cinncinati',
+    gender: 'Male',
+    favLanguage: 'JavaScript', 
+    specialty: 'back-end',
+    catchphrase: `I'll be back`
+});
+
+const nettie = new Instructor({
+    name: 'Nettie',
+    age: 27, 
+    location: 'Miami',
+    gender: 'Female',
+    favLanguage: 'Python', 
+    specialty: 'Front-End',
+    catchphrase: `My favorite date is April 25th`
+});
+
 class Student extends Person {
     constructor(attrs) {
         super(attrs);
@@ -65,3 +85,5 @@ class ProjectManagers extends Instructor {
         return `${this.name} debugs ${student.name}'s code on ${this.speacialty}.`;
     }
 }
+
+const
