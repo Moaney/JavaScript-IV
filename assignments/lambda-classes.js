@@ -15,17 +15,17 @@ class Person {
 class Instructor extends Person {
     constructor(attrs) {
     super(attrs);
-    this.speacialty = attrs.speacialty;
+    this.specialty = attrs.specialty;
     this.favLanguage = attrs.favLanguage;
     this.catchphrase = attrs.catchphrase;
     }
 
     demo() {
-        return `Today we are learning about ${this.speacialty}.`;
+        return `Today we are learning about the ${this.specialty}.`;
     }
 
     grade() {
-        return `${this.name} receives a perfect score on ${this.speacialty}.`;
+        return `${Student.name} receives a perfect score on ${this.specialty}.`;
     }
 }
 
@@ -62,11 +62,11 @@ class Student extends Person {
     }
 
     PRAssignment() {
-        return `${this.name} has begun submitted a PR for ${this.speacialty}.`;
+        return `${this.name} has begun submitted a PR for ${this.specialty}.`;
     }
 
     sprintChallenge() {
-        return `${this.name} has begun sprint challenge on ${this.speacialty}.`;
+        return `${this.name} has begun sprint challenge on ${this.specialty}.`;
     }
 }
 
@@ -118,11 +118,11 @@ class ProjectManagers extends Instructor {
     }
 
     debugsCode() {
-        return `${this.name} debugs ${student.name}'s code on ${this.speacialty}.`;
+        return `${this.name} debugs ${student.name}'s code on ${this.specialty}.`;
     }
 }
 
-const aria = new Projectmanagers({
+const aria = new ProjectManagers({
     name: 'Bran',
     age: 32, 
     location: 'Winterfell',
@@ -139,3 +139,11 @@ const sanza = new ProjectManagers({
     gradClassName: 'WebPT9',
     favInstructor: 'Jett'
 });
+
+console.log(nettie.catchphrase);
+console.log(jett.demo());
+// console.log(kelli.grade());
+console.log(nala.favSubjects);
+console.log(kelli.previousBackground);
+// console.log(aria.kelli.debugsCode());
+console.log(aria.favInstructor);
